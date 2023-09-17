@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Pluap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#education">EDUCATION</a></li>
+                    <li><a href="#footer">CONTACT</a></li>
+                </ul>
+        </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <img src="images/Pluap.jpg">
+    <h1>I am John Paul Manalastas</h1>
+    <p>Hey there, I'm a third-year Computer Engineering student over at Holy Angel University. <br>It's been an exciting journey so far as I'm right in the thick of the tech world's action.</p>
+    <a href="#about-me" class="hero-btn">Learn More About Me!</a>
+
+</div>
+ </section>
+
+ <!-- About Me Section -->
+
+ <section class="aboutme" id="about-me">
+    <h1>About Me</h1>
+    <p>I'm a third-year Computer Engineering student at Holy Angel University with a passion that spans beyond technology. I'm deeply in love with video games, poetry, and music, embodying a well-rounded and diverse set of interests. In addition to my academic journey, I serve as the Vice President-External of the ICpEP.se HAU Chapter. In this role, I take pride in leading and representing our chapter, engaging in event coordination, fostering valuable partnerships, and extending our presence beyond the university.</p>
+
+    <div class="row">
+        <div class="aboutme-col" id="video-games-col">
+            <input type="checkbox" id="video-games-toggle">
+            <label for="video-games-toggle">
+                <h3>Video Games</h3>
+                <p>Video games provide a unique avenue for relaxation and mental stimulation. It's my go-to pastime for unwinding and connecting with friends while experiencing the endless creativity of the gaming industry.</p>
+            </label>
+            <div class="video-container">
+                <iframe src="videos/valoclip.mp4"></iframe>
+            </div>
+        </div>
+        <div class="aboutme-col" id="poetry-col">
+            <input type="checkbox" id="poetry-toggle">
+            <label for="poetry-toggle">
+                <h3>Poetry</h3>
+                <p>Poetry is my soul's expression, a world where words become art. It's my sanctuary, a place where feelings flow freely, and imagination takes flight. Poetry is a cherished hobby that allows me to explore the depths of human experience and creativity.</p>
+            </label>
+            <div class="video-container">
+                <iframe src="videos/happy motmot  - Trim.mp4"></iframe>
+            </div>
+        </div>
+        <div class="aboutme-col" id="sports-col">
+            <input type="checkbox" id="sports-toggle">
+            <label for="sports-toggle">
+                <h3>Music</h3>
+                <p>In a world filled with noise and chaos, music provides a sanctuary of tranquility and inspiration. It's my refuge during challenging times and a source of boundless joy during moments of celebration.</p>
+            </label>
+            <div class="video-container">
+                <iframe src="videos/music.mp4"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Education -->
+
+<section class="education" id="education">
+    <h1>My Educational Background</h1>
+    <p>Throughout my educational journey, I've not only acquired knowledge but also cultivated a passion for continuous learning and personal growth. Each stage has contributed to shaping me into the well-rounded individual I am today, and I eagerly anticipate the challenges and opportunities that lie ahead in my academic and professional endeavors.</p>
+
+    <div class="row">
+        <div class="education-col">
+            <img src="images/siis.JPG">
+            <div class="layer">
+                <h3>Sta.Ines Intergrated School<br>Grade School<br>2009-2015</h3>
+            </div>
+        </div>
+        <div class="education-col">
+            <img src="images/dba.jpg">
+            <div class="layer">
+                <h3>Don Bosco Academy<br>Junior and Senior High<br>2015-2021</h3>
+                
+            </div>
+        </div>
+        <div class="education-col">
+            <img src="images/holy.png">
+            <div class="layer">
+                <h3>Holy Angel University<br>College<br>2021-Present</h3>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- footer -->
+<section class="footer" id="footer">
+    <h4>Contact Me</h4>
+    <p>Interested in knowing more about me? Reach out via my contact info and connect on social media. Open to new connections and conversations!</p>
+    <div class="icons"> 
+        <a href="https://www.facebook.com/jnplmnlsts/" target="_blank">
+            <i class='bx bxl-facebook-circle'></i>
+        </a>
+        <a href="https://www.instagram.com/jnpl_mnlsts/" target="_blank">
+            <i class='bx bxl-instagram-alt'></i>
+        </a>
+        <a href="https://www.tiktok.com/@its.me.pluap" target="_blank">
+            <i class='bx bxl-tiktok'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/paul-manalastas/" target="_blank">
+            <i class='bx bxl-linkedin-square'></i>
+        </a>
+    </div>
+</section>
+
+
+
+ <!--JavaScript for Menu*-->
+<script>
+
+    var navLinks= document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
